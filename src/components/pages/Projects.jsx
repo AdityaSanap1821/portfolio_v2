@@ -49,6 +49,13 @@ const projects = [
     tags: ["Unity", "C#", "2D Game", "Game Development"],
     link: "https://cobra-bts.itch.io/space-knight-2d-shooter",
   },
+  {
+    title: "Portfolio v1 – Original Developer Portfolio",
+    description:
+      "Built and deployed the first version of my personal developer portfolio with custom UI components, project showcase, and a contact form.",
+    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages", "Responsive Design"],
+    link: "https://adityasanap1821.github.io/Portfolio/",
+  },
 ];
 
 const cardVariants = {
