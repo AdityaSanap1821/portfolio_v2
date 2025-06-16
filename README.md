@@ -6,8 +6,8 @@ This is a complete redesign and rebuild with a modern tech stack including **Rea
 ## Table of Contents
 
 - [Demo](#demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
+- [Features](#-features)
+- [Technologies Used](#️-technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
 - [License](#license)
@@ -17,7 +17,6 @@ This is a complete redesign and rebuild with a modern tech stack including **Rea
 
 Check out the live portfolio here 👉  
 🔗 [https://adityasanap1821.github.io/portfolio_v2/](https://adityasanap1821.github.io/portfolio_v2/)
-
 
 ## ✨ Features
 
