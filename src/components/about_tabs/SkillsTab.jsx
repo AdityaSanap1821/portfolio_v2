@@ -72,27 +72,50 @@ const skillData = [
 
 export default function SkillsTab() {
   return (
-    <div className="space-y-6 text-sm text-neutral-300">
+    <div className="space-y-10 text-sm text-neutral-300">
       {skillData.map(({ category, icons }) => (
         <div
           key={category}
-          className="flex justify-between items-center border-b border-white/10 pb-4"
+          className="border-b border-white/10 pb-4"
         >
-          <h4 className="font-semibold text-white w-1/3 uppercase">
-            {category}
-          </h4>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 w-2/2">
-            {icons.map(({ Icon, label }, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center hover:scale-105 transition-transform duration-200"
-              >
-                <img src={Icon} alt={label} className="w-10 h-10 mb-1" />
-                <span className="text-white text-xs uppercase tracking-wider">
-                  {label}
-                </span>
-              </div>
-            ))}
+          {/* --- Mobile Layout --- */}
+          <div className="md:hidden">
+            <h4 className="font-semibold text-white text-lg uppercase mb-6">
+              {category}
+            </h4>
+            <div className="grid grid-cols-3 gap-6 w-full">
+              {icons.map(({ Icon, label }, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center hover:scale-105 transition-transform duration-200"
+                >
+                  <img src={Icon} alt={label} className="w-10 h-10 mb-1" />
+                  <span className="text-white text-xs uppercase tracking-wider text-center">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* --- Desktop & Tablet Layout --- */}
+          <div className="hidden md:flex justify-between items-center">
+            <h4 className="font-semibold text-white w-1/3 uppercase">
+              {category}
+            </h4>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 w-full">
+              {icons.map(({ Icon, label }, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center hover:scale-105 transition-transform duration-200"
+                >
+                  <img src={Icon} alt={label} className="w-10 h-10 mb-1" />
+                  <span className="text-white text-xs uppercase tracking-wider text-center">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       ))}

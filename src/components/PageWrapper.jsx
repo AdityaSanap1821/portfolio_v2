@@ -22,7 +22,7 @@ export default function PageWrapper({ children }) {
       <div className="absolute inset-0 z-20 bg-black/50" />
 
       {/* Content */}
-      <div className="relative z-30 w-full overflow-hidden">
+      <div className="relative z-30 w-full overflow-hidden px-4 sm:px-6 mx-auto">
         {children}
       </div>
     </div>

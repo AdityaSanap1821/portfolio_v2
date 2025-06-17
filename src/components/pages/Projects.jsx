@@ -83,7 +83,7 @@ export default function Projects() {
 
   return (
     <PageWrapper>
-      <div className="relative flex flex-col items-center text-center min-h-screen w-full pt-16 pb-16 px-4 md:px-8">
+      <div className="relative flex flex-col items-center text-center min-h-screen w-full pt-16 pb-16">
         {/* Title Section */}
         <div className="relative w-full flex items-center justify-center mt-10">
           <div
@@ -105,9 +105,17 @@ export default function Projects() {
             PROJECTS
           </h1>
         </div>
+        <a
+          href="https://github.com/AdityaSanap1821"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white text-sm hover:text-blue-300 mt-10"
+        >
+          View All →
+        </a>
 
         {/* Animated Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-w-6xl w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-6xl w-full">
           {projects.map((project, idx) => (
             <motion.div
               key={idx}

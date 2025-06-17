@@ -16,7 +16,7 @@ export default function Contact() {
 
   return (
     <PageWrapper>
-      <div className="relative flex flex-col items-center text-center min-h-screen w-full pt-16 px-4">
+      <div id="Contact" className="relative flex flex-col items-center text-center min-h-screen w-full pt-16 px-4">
         {/* Ghost + Main Text */}
         <div className="relative w-full flex items-center justify-center mt-10">
           <div

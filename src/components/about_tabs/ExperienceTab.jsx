@@ -55,7 +55,7 @@ export default function ExperienceTab() {
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-2">
               <HiOutlineBriefcase className="text-white w-5 h-5 flex-shrink-0" />
-              <h4 className="text-white font-semibold text-base">{exp.title}</h4>
+              <h4 className="text-white font-semibold text-base text-left">{exp.title}</h4>
             </div>
             <p className="text-neutral-400 text-xs whitespace-nowrap">{exp.duration}</p>
           </div>

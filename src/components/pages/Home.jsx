@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import ScrollReveal from "scrollreveal";
 import PageWrapper from "../PageWrapper";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const typedRef = useRef(null);
@@ -47,7 +48,7 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <div className="relative flex flex-col items-center justify-center text-center w-full min-h-screen px-6 py-20">
+      <div className="relative flex flex-col items-center justify-center text-center w-full min-h-screen py-20">
         {/* Ghost + Main Text Wrapper */}
         <div className="relative w-full flex items-center justify-center">
           {/* Ghost Text with vertical gradient fade and padding */}
@@ -82,16 +83,19 @@ export default function Home() {
         {/* CTA Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 featured-button z-10">
           {/* HIRE ME Button */}
-          <button className="px-8 py-3 border border-white text-white rounded-full transition duration-300 relative overflow-hidden group">
+          <Link
+            to="/contact"
+            className="px-8 py-3 border border-white text-white rounded-full transition duration-300 relative overflow-hidden group"
+          >
             <span className="relative z-10 group-hover:text-black transition duration-300">HIRE ME</span>
             <span className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 rounded-full z-0"></span>
-          </button>
+          </Link>
 
           {/* DOWNLOAD CV Button */}
           <a
             href="https://drive.google.com/file/d/1oJQej0cuXPHucOk4dArAMWMUxAlBskkU/view?usp=sharing"
-
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative px-8 py-3 bg-white text-black border border-white rounded-full overflow-hidden group transition-colors duration-300"
           >
             <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
@@ -99,6 +103,7 @@ export default function Home() {
             </span>
             <span className="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-in-out z-0" />
           </a>
+
         </div>
 
         {/* Social Icons */}
